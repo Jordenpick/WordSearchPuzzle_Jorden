@@ -45,7 +45,6 @@ namespace WordSearchPuzzle
                     }
                 }
             }
-
             int selectedCategoryIndex = 1;
             for (int i = 0; i < categories.Length; i++)
             {
@@ -96,17 +95,14 @@ namespace WordSearchPuzzle
             bool CanPlace(string word, int row, int col, bool isHorizontal)
             {
                 bool canPlace = true;
-
                 if (isHorizontal)
                 {
-
                     if (col + word.Length > 20)
                     {
                         canPlace = false;
                     }
                     else
                     {
-
                         for (int i = 0; i < word.Length; i++)
                         {
                             if (wordSearch[row, col + i] != '.')
@@ -125,7 +121,6 @@ namespace WordSearchPuzzle
                     }
                     else
                     {
-
                         for (int i = 0; i < word.Length; i++)
                         {
                             if (wordSearch[row + i, col] != '.')
@@ -160,13 +155,11 @@ namespace WordSearchPuzzle
             foreach (string word in eightWords)
             {
                 bool isPlaced = false;
-
                 while (!isPlaced)
                 {
                     int row = rmd.Next(20);
                     int col = rmd.Next(20);
                     bool isHorizontal = rmd.Next(2) == 0;
-
                     if (CanPlace(word, row, col, isHorizontal))
                     {
                         WordsPlaced(word, row, col, isHorizontal);
