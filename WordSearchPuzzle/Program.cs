@@ -79,10 +79,8 @@ namespace WordSearchPuzzle
             {
                 Console.WriteLine(word);
             }
-
             //creating a word search with char's 
             char[,] wordSearch = new char[20, 20];
-
             for (int i = 0; i < 20; i++)
             {
                 for (int j = 0; j < 20; j++)
@@ -90,7 +88,6 @@ namespace WordSearchPuzzle
                     wordSearch[i, j] = '.';
                 }
             }
-
             //checking if the word can be placed
             bool CanPlace(string word, int row, int col, bool isHorizontal)
             {
