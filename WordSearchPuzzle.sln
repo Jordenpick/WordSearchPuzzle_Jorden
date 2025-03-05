@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSearchPuzzle", "WordSearchPuzzle\WordSearchPuzzle.csproj", "{ED1C6B05-F50C-4B70-AA42-E39A37AE4B82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingWords", "GeneratingWords\GeneratingWords.csproj", "{CE360BB6-00AA-4622-B700-96FF6138F02A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ED1C6B05-F50C-4B70-AA42-E39A37AE4B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED1C6B05-F50C-4B70-AA42-E39A37AE4B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED1C6B05-F50C-4B70-AA42-E39A37AE4B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE360BB6-00AA-4622-B700-96FF6138F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE360BB6-00AA-4622-B700-96FF6138F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE360BB6-00AA-4622-B700-96FF6138F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE360BB6-00AA-4622-B700-96FF6138F02A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
