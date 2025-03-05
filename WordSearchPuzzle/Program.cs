@@ -169,19 +169,30 @@ namespace WordSearchPuzzle
             {
                 for (int j = 0; j < 20; j++)
                 {
+                    if (wordSearch[i, j] == '.')
+                    {
+                        wordSearch[i, j] = (char)rmd.Next('A', 'Z' + 1);
+                    }
+                }
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
                     Console.Write(wordSearch[i, j]);
                 }
                 Console.WriteLine();
             }
             //outputting the 8 words chosen in the category user has picked
             foreach (string word in eightWords)
-            {
-                Console.WriteLine("Find the following:" + word);
-            }
+                {
+                    Console.WriteLine("Find the following:" + word);
+                }
 
+            }
         }
     }
-}
+
 
 
 
