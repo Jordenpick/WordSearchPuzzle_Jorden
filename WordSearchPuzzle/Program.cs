@@ -184,14 +184,40 @@ namespace WordSearchPuzzle
                 Console.WriteLine();
             }
             //outputting the 8 words chosen in the category user has picked
+            Console.WriteLine("Find the words:");
             foreach (string word in eightWords)
-                {
-                    Console.WriteLine("Find the following:" + word);
-                }
+            {
+                Console.WriteLine(word);
+            }
 
+            int wordsFound = 0;
+            //tracking which words to be found.
+
+            while (wordsFound < 8)
+            {
+                Console.WriteLine("Enter a word found");
+                string? userInput = Console.ReadLine();
+
+                if (userInput != null)
+                {
+                    for (int i = 0; i < eightWords.Length; i++)
+                    {
+                        if (userInput == eightWords[i])
+                        {
+                            wordsFound++;
+                            Console.WriteLine("You found " + userInput);
+                            break;
+                        }
+                    }
+                    if (wordsFound == 8)
+                    {
+                        Console.WriteLine("You found all the words.");
+                    }
+                }
             }
         }
     }
+}
 
 
 
